@@ -1,10 +1,9 @@
 body {
     font-family:  "ヒラギノ角ゴ ProN W3", HiraKakuProN-W3, 游ゴシック, "Yu Gothic", メイリオ, Meiryo, Verdana, Helvetica, Arial, sans-serif;
 }
-
-
 table {
     border-collapse:collapse;
+    margin: 15px auto 20px auto;
 }
 
 th {
@@ -36,8 +35,9 @@ td:nth-of-type(5) {
     color:#ffffff;
     background: #556b2f;
     border: none;
-    margin: 15px 0px 0px 22px;
     border-radius: 1vh;
+    display: block;
+    margin: auto;
 } 
 
 .row_gray {
