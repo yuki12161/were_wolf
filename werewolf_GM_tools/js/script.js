@@ -11,6 +11,7 @@ function check_winner() {
 
     // 生存者をカウント
     if (!c1 && !c2) {
+      row.classList.remove("row_gray")
       if (row.classList.contains("village") == true) {
         cnt_v++;
       } else if(row.classList.contains("wolf") == true) {
@@ -18,6 +19,8 @@ function check_winner() {
       } else if(row.classList.contains("fox") == true) {
         cnt_f++;
       }
+    } else {
+      row.classList.add("row_gray")
     }
   }
 
@@ -39,5 +42,20 @@ function check_winner() {
     }
   } else {
     alert('ゲーム続行\n\n■生存者\n・村：' + cnt_v + '\n・狼：' + cnt_w + '\n・狐：' + cnt_f);
+  }
+}
+
+function grayout() {
+   let table = document.getElementById('tbl');
+
+  for (let row of table.rows) {
+    c1 = row.cells[3].children.c1.checked;
+    c2 = row.cells[4].children.c2.checked;
+
+    if (!c1 && !c2) {
+      row.classList.remove("row_gray")
+    } else {
+      row.classList.add("row_gray")
+    }
   }
 }

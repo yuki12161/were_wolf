@@ -1,9 +1,21 @@
+body {
+    font-family:  "ヒラギノ角ゴ ProN W3", HiraKakuProN-W3, 游ゴシック, "Yu Gothic", メイリオ, Meiryo, Verdana, Helvetica, Arial, sans-serif;
+}
+
+
+table {
+    border-collapse:collapse;
+}
+
 th {
-     background:#e9faf9;
+     border-spacing: 0px 0px 0px 0px;
+     background:#556b2f;
+     color: #ffffff;
+     margin:2px 2px 100px 2px;
 }
 
 td {
-    padding:2px;
+    padding:2px 2px 2px 2px;
 }
 
 td:nth-of-type(1) {
@@ -12,5 +24,22 @@ td:nth-of-type(1) {
 
 td:nth-of-type(4),
 td:nth-of-type(5) {
+    width: 38px;
     text-align:center;
+}
+
+.btn {
+    height: 45px;
+    width: 270px;
+    font-size: 95%;
+    font-weight: bold;
+    color:#ffffff;
+    background: #556b2f;
+    border: none;
+    margin: 15px 0px 0px 22px;
+    border-radius: 1vh;
+} 
+
+.row_gray {
+    background: #d3d3d3;
 }
