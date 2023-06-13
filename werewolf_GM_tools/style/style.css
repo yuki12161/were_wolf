@@ -40,6 +40,10 @@ td:nth-of-type(5) {
     margin: auto;
 } 
 
+.btn:active {
+    background: #69821b;
+}
+
 .row_gray {
     background: #d3d3d3;
 }
