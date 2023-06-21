@@ -11,10 +11,10 @@
   <script>
     $(function(){
       $('[name="c1"]').change(function(){
-        grayout();
+        count_player();
     });
       $('[name="c2"]').change(function(){
-        grayout();
+        count_player();
     });
   });
   </script>
@@ -133,5 +133,5 @@
         <td><input type="checkbox" name="c2"></td>
       </tr>
       <tbody>
-  </table> <input class="btn" type="button" value="判定" onclick="check_winner()"> </body>
+  </table> <input class="btn" type="button" value="判定" onclick="judge_winner()"> </body>
 </html>
