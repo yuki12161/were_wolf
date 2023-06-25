@@ -7,7 +7,7 @@ function judge_winner(call_show_msg, is_all_msg) {
 
   if (call_show_msg) {
     // 描画より先にaleatが起動しない工夫
-    setTimeout(show_msg, 1, cnt_v, cnt_w, cnt_f, is_all_msg)
+    setTimeout(show_msg, 1000, cnt_v, cnt_w, cnt_f, is_all_msg)
   }
 }
 
