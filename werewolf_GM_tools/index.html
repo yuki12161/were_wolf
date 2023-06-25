@@ -11,10 +11,18 @@
   <script>
     $(function(){
       $('[name="c1"]').change(function(){
-        count_player();
+        if($(this).prop('checked')){
+          judge_winner(true, false);
+      } else {
+          judge_winner(false, false);
+      }
     });
       $('[name="c2"]').change(function(){
-        count_player();
+        if($(this).prop('checked')){
+          judge_winner(true, false);
+      } else {
+          judge_winner(false, false);
+      }
     });
   });
   </script>
@@ -133,5 +141,5 @@
         <td><input type="checkbox" name="c2"></td>
       </tr>
       <tbody>
-  </table> <input class="btn" type="button" value="判定" onclick="judge_winner()"> </body>
+  </table> <input class="btn" type="button" value="判定" onclick="judge_winner(true, true)"> </body>
 </html>
